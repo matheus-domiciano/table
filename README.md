@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # table
 =======
+=======
+>>>>>>> cae5a1337fe0bd71cdd0199e93e7bd0fdf9eb768
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -10,7 +13,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+<<<<<<< HEAD
 ## About Zievo Project
+=======
+## About Laravel
+>>>>>>> cae5a1337fe0bd71cdd0199e93e7bd0fdf9eb768
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
@@ -67,4 +74,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<<<<<<< HEAD
 >>>>>>> 818bc17 (form)
+=======
+=======
+# table
+>>>>>>> d79a2db98d2f55b92741704b167d34fdf29145cc
+>>>>>>> cae5a1337fe0bd71cdd0199e93e7bd0fdf9eb768
