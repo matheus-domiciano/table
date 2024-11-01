@@ -37,11 +37,10 @@ const newButton = {
         const button = document.createElement("button");
         button.className = "btn edit-item-btn text-secondary";
 
-        button.setAttribute('data-item-id', data.id)
+        button.setAttribute('data-book-id', data.id)
 
         button.setAttribute('data-bs-toggle', 'modal')
         button.setAttribute('data-bs-target', '#editBookModal')
-
 
         button.setAttribute('data-book-title', data.title)
         button.setAttribute('data-book-genre', formatString(data.genre))
@@ -73,16 +72,21 @@ const newButton = {
 
 
     delete: (data) => {
+
         // Cria o elemento <a>
         const button = document.createElement("button");
         button.className = "btn delete-item-btn text-danger";
-        button.setAttribute('id', 'delete-item-btn')
-        button.setAttribute('data-item-id', data.id)
+
+        button.setAttribute('type', "button")
+
+
+        button.setAttribute('id', 'delete-book')
+
+        button.setAttribute('data-book-id', data.id)
 
         button.setAttribute('data-bs-toggle', 'modal')
         button.setAttribute('data-bs-target', '#deleteBookModal')
 
-        button.setAttribute('data-book-id', data.id)
 
 
 
@@ -123,6 +127,28 @@ const formToObject = (form) => {
     return data
 }
 
+const consentDialog = async (accpet, refuse) => {
+
+    console.log("ENTROOU");
+
+    const deletBtn = document.querySelector(accpet);
+    
+    return new Promise((resolve, reject) => {
+
+        // Evento de remoção de livro
+        deletBtn.addEventListener(
+            "click",
+            () => {
+
+                resolve(true)
+
+            },
+            { once: true } // Garante que o evento seja adicionado uma única vez
+        );
+
+    })
+}
 
 
-export { newButton, formatString, formToObject }
+
+export { newButton, formatString, formToObject, consentDialog }

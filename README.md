@@ -9,19 +9,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<<<<<<< HEAD
 ## About Zievo Project
-=======
->>>>>>> 
 
-Com o Zievo Table você poderá consultar seus livros preferidos, e encontrar referências importantes na usa pesquisa:
+Com o Zievo Table você poderá consultar seus livros preferidos, e encontrar referências importantes nausa pesquisa.
 
 ## Funcionalidades
 
 - **CRUD Completo**: Crie, leia, atualize e delete registros de livros.
 - **Sistema de Pesquisa**: Busque qualquer livro pelo título.
 - **Listagem de Livros**: Exibe os livros cadastrados em uma tabela com detalhes relevantes.
-- **Interface Amigável**: Interface responsiva e intuitiva, desenvolvida com HTML/CSS e Blade Templates.
+- **Interface Amigável**: Interface responsiva e intuitiva, desenvolvida com HTML/CSS e Bootstrap.
 
 
 ## Tecnologias Utilizadas
@@ -31,7 +28,4 @@ Com o Zievo Table você poderá consultar seus livros preferidos, e encontrar re
 - **Blade Templates**: Para renderização de views e criação de uma interface dinâmica.
 - **Bootstrap**: Para estilização e responsividade da interface.
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 

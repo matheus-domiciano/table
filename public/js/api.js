@@ -32,6 +32,9 @@ const findBooks = (v) => {
 
 const removeBook = (v) => {
 
+    console.log(v);
+    
+
     return new Promise((resolve, reject) => {
         fetch(`/remove`, {
             method: "POST",
@@ -74,6 +77,7 @@ const updateBook = (data) => {
         .then(response => response.json())
         .then(res => {
             console.log(res);
+            resolve(res)
         })
         .catch(error => console.log('Error:', error));
 

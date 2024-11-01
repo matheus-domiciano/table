@@ -47,7 +47,6 @@
               </div>
             </div>
 
-
             <div class="row">
 
               <div class="col-md-8">
@@ -61,21 +60,17 @@
               </div>
             </div>
 
-
-            <div class="modal-footer">
+            <div class="modal-footer mt-3">
               <button type="button" class="btn btn-secundary" data-bs-dismiss="modal">Cancel</button>
               <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Add</button>
             </div>
-
           </div>
 
         </form>
 
-
       </div>
     </div>
   </div>
-
 
 
 
@@ -137,9 +132,6 @@
     </div>
   </div>
 
-
-
-
   <!-- Delete Modal -->
   <div class="modal fade" id="deleteBookModal" tabindex="-1" role="dialog" aria-labelledby="deleteBookModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -155,14 +147,12 @@
         <div class="modal-body">
           Are you sure about this?
 
-          <input type="text" name="id" id="book-id" value="" hidden>
-
+          <input type="text" name="id" id="delete-book-id" value="" hidden>
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-          <button id="delete-book" data-bs-dismiss="modal" class="btn btn-danger">Delete</button>
-
+          <button id="confirm-delete-book" data-bs-dismiss="modal" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-secundary" data-bs-dismiss="modal">Cancel</button>
 
         </div>
 
@@ -170,13 +160,7 @@
     </div>
   </div>
 
-
-
   <script type="module" src="/js/app.js"></script>
-
-
-
-
 
 </body>
 

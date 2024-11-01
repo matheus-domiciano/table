@@ -68,7 +68,7 @@
                     <td>{{ $livro->author }}</td>
                     <td>{{ ucwords(str_replace('_', ' ', $livro->genre)) }}</td>
                     <td>{{ $livro->b_height }}</td>
-                    <td><button type="button" class="btn edit-item-btn text-secondary" data-bs-toggle="modal" data-edit-book-id="{{ $livro->id }}"  data-bs-target="#editBookModal" data-book-title="{{ $livro->title }}" data-book-genre="{{ ucwords(str_replace('_', ' ', $livro->genre)) }}"
+                    <td><button type="button" class="btn edit-item-btn text-secondary" data-bs-toggle="modal" book-id="{{ $livro->id }}"  data-bs-target="#editBookModal" data-book-title="{{ $livro->title }}" data-book-genre="{{ ucwords(str_replace('_', ' ', $livro->genre)) }}"
                             data-book-author="{{ $livro->author }}"
                             data-book-height="{{ $livro->b_height }}"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 8 8">
                                 <path fill="currentColor" d="M6 0L5 1l2 2l1-1zM4 2L0 6v2h2l4-4z" />

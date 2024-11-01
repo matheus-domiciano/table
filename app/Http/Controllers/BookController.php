@@ -7,8 +7,6 @@ use App\Models\Book;
 
 
 
-
-
 class BookController extends Controller
 {
     /**
@@ -26,21 +24,19 @@ class BookController extends Controller
      */
     public function search(Request $request)
     {
+    
 
-        //
         // Varifica se o campo de pesquisa está vazio
         if (empty($request->name)) {
-            // Caso o valor seja vazio, retornará todos os livros disponíveis
-            $books = Book::all();
+            $books = Book::all(); // Caso o valor seja vazio, retornará todos os livros disponíveis
         } else {
-            // Busca por título utilizando ILIKE para busca parcial no postgre
+            // Busca por título utilizando ILIKE para busca parcial no postgr
             $books = Book::where('title', 'ILIKE', "%{$request->name}%")->get();
         }
 
-
-        // Retorna a resposta em JSON para tratamento em JS no JS
+        // Retorna a resultados em JSON
         return response()->json([
-            'message' => 'Resultados da pesquisa',
+            'message' => 'Search results',
             'books' => $books
         ]);
     }
@@ -62,7 +58,7 @@ class BookController extends Controller
         // Criação do novo registro
         $book = Book::create($validatedData);
 
-        // Retorna uma resposta JSON com o novo registro
+        // Retorna um JSON com o novo registro
         return response()->json([
             'message' => 'Book created successfully',
             'data' => $book
@@ -103,7 +99,7 @@ class BookController extends Controller
         $book = Book::findOrFail($request->id); // Encontra o livro ou lança um erro 404 se não for encontrado
         $book->delete(); // Remove o livro
 
-        // Retorn status 200
+        // Retorn status 200 caso 
         return response()->json([
             'message' => 'Success to remoove!',
             'status' => 200

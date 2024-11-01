@@ -39,3 +39,26 @@ tr {
  .w-80per {
     width: 40%;
  }
+
+
+
+ /* SCROLLABLE CONFIG*/
+ /*
+ thead, tbody{
+    display: block;  
+  }
+
+ tbody{
+    overflow-y: scroll !important;
+    height: 500px;
+    }
+
+.table th {
+  padding: 5px;
+  width: 21.5%;
+}
+
+.table td {
+  padding: 5px;
+  width: 20%;
+}*/
