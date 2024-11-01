@@ -1,0 +1,9 @@
+.table-container {
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    border-radius: 14px;
+    padding: 10px 20px !important;
+}

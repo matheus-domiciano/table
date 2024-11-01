@@ -1,0 +1,41 @@
+.table-container {
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    width: 900px;
+    height: 600px;
+    position:relative;
+    margin-bottom: 14px;
+}
+
+.table-scroller {
+    height:600px;
+    overflow:auto;
+}
+th {
+    border-radius: 14px;
+    padding: 10px 20px !important;
+}
+
+tr {
+    line-height: 25px;
+    min-height: 25px;
+    height: 25px !important;
+ }
+
+
+ .h-9 {
+    height: 40px;
+ }
+
+
+ .w-200 {
+    width: 200px;
+ }
+
+ .w-900 {
+    width: 900px;
+ }
+
+ .w-80per {
+    width: 40%;
+ }
